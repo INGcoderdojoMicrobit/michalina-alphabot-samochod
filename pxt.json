@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "AlphaBot2": "github:waveshare/pxt-alphabot2#v1.0.4"
     },
     "files": [
         "main.blocks",
