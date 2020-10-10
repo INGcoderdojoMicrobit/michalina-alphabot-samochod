@@ -1,5 +1,5 @@
-basic.showIcon(IconNames.Heart)
-AlphaBot2.RunDelay(Dir.forward, 50, 2)
+basic.showIcon(IconNames.Asleep)
+radio.setGroup(123)
 basic.forever(function () {
 	
 })
