@@ -1,3 +1,7 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    AlphaBot2.MotorRun(Motors.M1, receivedNumber)
+    AlphaBot2.MotorRun(Motors.M2, receivedNumber)
+})
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "E") {
         AlphaBot2.RunDelay(Dir.forward, 50, 1)
