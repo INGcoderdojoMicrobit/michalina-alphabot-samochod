@@ -13,6 +13,15 @@ radio.onReceivedString(function (receivedString) {
         AlphaBot2.RunDelay(Dir.turnLeft, 50, 1)
     }
 })
+radio.onReceivedValue(function (name, value) {
+    if (name == "v") {
+        AlphaBot2.MotorRun(Motors.M1, value)
+    } else if (name == "v2") {
+        AlphaBot2.MotorRun(Motors.M2, value)
+    } else {
+    	
+    }
+})
 basic.showIcon(IconNames.Asleep)
 radio.setGroup(123)
 basic.forever(function () {
