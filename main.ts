@@ -25,5 +25,7 @@ radio.onReceivedValue(function (name, value) {
 basic.showIcon(IconNames.Asleep)
 radio.setGroup(123)
 basic.forever(function () {
-	
+    if (AlphaBot2.Ultrasonic() < 15) {
+        AlphaBot2.RunDelay(Dir.turnRight, 70, 1)
+    }
 })
