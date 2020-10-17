@@ -4,13 +4,13 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "E") {
-        AlphaBot2.RunDelay(Dir.forward, 150, 1)
+        AlphaBot2.RunDelay(Dir.forward, 70, 1)
     } else if (receivedString == "C") {
-        AlphaBot2.RunDelay(Dir.backward, 150, 1)
+        AlphaBot2.RunDelay(Dir.backward, 70, 1)
     } else if (receivedString == "D") {
-        AlphaBot2.RunDelay(Dir.turnRight, 90, 0.3)
+        AlphaBot2.RunDelay(Dir.turnRight, 50, 0.3)
     } else if (receivedString == "F") {
-        AlphaBot2.RunDelay(Dir.turnLeft, 90, 0.3)
+        AlphaBot2.RunDelay(Dir.turnLeft, 50, 0.3)
     }
 })
 radio.onReceivedValue(function (name, value) {
