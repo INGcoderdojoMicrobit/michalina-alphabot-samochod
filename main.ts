@@ -4,13 +4,13 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "E") {
-        AlphaBot2.RunDelay(Dir.forward, 50, 1)
+        AlphaBot2.RunDelay(Dir.forward, 90, 1)
     } else if (receivedString == "C") {
-        AlphaBot2.RunDelay(Dir.backward, 50, 1)
+        AlphaBot2.RunDelay(Dir.backward, 90, 1)
     } else if (receivedString == "D") {
-        AlphaBot2.RunDelay(Dir.turnRight, 50, 1)
+        AlphaBot2.RunDelay(Dir.turnRight, 90, 0.3)
     } else if (receivedString == "F") {
-        AlphaBot2.RunDelay(Dir.turnLeft, 50, 1)
+        AlphaBot2.RunDelay(Dir.turnLeft, 90, 0.3)
     }
 })
 radio.onReceivedValue(function (name, value) {
@@ -25,7 +25,5 @@ radio.onReceivedValue(function (name, value) {
 basic.showIcon(IconNames.Asleep)
 radio.setGroup(123)
 basic.forever(function () {
-    if (AlphaBot2.Ultrasonic() < 15) {
-        AlphaBot2.RunDelay(Dir.turnRight, 70, 1)
-    }
+	
 })
