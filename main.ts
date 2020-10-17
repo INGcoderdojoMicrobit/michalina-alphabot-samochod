@@ -4,9 +4,9 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "E") {
-        AlphaBot2.RunDelay(Dir.forward, 90, 1)
+        AlphaBot2.RunDelay(Dir.forward, 150, 1)
     } else if (receivedString == "C") {
-        AlphaBot2.RunDelay(Dir.backward, 90, 1)
+        AlphaBot2.RunDelay(Dir.backward, 150, 1)
     } else if (receivedString == "D") {
         AlphaBot2.RunDelay(Dir.turnRight, 90, 0.3)
     } else if (receivedString == "F") {
